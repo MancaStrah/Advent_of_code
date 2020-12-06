@@ -17,7 +17,7 @@ let rec aux group_strings group lines =
   aux [] "" lines
 
 let count_different_chars_in_string string =
-let alphabeth = ['a';'b';'c';'d';'e';'f';'g';'h';'i';'j';'k';'l';'m';'n';'o';'p';'q';'r';'s';'t';'u';'v';'w';'x';'y';'z'] in
+let alphabet = ['a';'b';'c';'d';'e';'f';'g';'h';'i';'j';'k';'l';'m';'n';'o';'p';'q';'r';'s';'t';'u';'v';'w';'x';'y';'z'] in
   let rec aux count alphabet string =
     match alphabet with
     | [] -> count
@@ -27,7 +27,7 @@ let alphabeth = ['a';'b';'c';'d';'e';'f';'g';'h';'i';'j';'k';'l';'m';'n';'o';'p'
       aux count xs string 
     )
   in
-  aux 0 alphabeth string 
+  aux 0 alphabet string 
 
 let sum_of_all group_strings =
   let rec aux sum group_strings = 
